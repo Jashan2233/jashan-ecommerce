@@ -21,3 +21,17 @@ class Product(db.Model):
     #Relationships
     users = db.relationship("User", back_populates="products")
     shop_products = db.relationship("Shop", back_populates="products_shop")
+
+
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'owner_id': self.owner_id,
+            'name': self.name,
+            'description': self.description,
+            'price': self.price,
+            'preview_image': self.preview_image,
+            'created_at': self.created_at,
+            'updated_at': self.updated_at
+        }
