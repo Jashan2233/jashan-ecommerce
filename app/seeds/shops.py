@@ -11,12 +11,12 @@ def seed_shops():
     shop2 = Shop(
         owner_id = 2,
         product_id = 2,
-        name = "The TECH LLC"
+        name = "The Digitals"
     )
     shop3 = Shop(
         owner_id = 3,
         product_id = 3,
-        name = "The TECH LLC"
+        name = "The Masters of llc"
     )
 
     all_shops = [shop1,shop2,shop3]
